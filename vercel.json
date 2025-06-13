@@ -8,7 +8,13 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/query",
+      "methods": ["POST"],
+      "dest": "app.py"
+    },
+    {
+      "src": "/health",
+      "methods": ["GET"],
       "dest": "app.py"
     }
   ]
