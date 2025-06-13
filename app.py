@@ -51,7 +51,7 @@ app = FastAPI(title="RAG Query API", description="API for querying the RAG knowl
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
